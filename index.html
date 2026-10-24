@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Matrimony | Wedding Invitation • November 24, 2026</title>
+    <meta name="description" content="Wedding Invitation for the Christian Holy Matrimony of David and Sarah on November 24, 2026. Join us in worship, love, and sacred celebration.">
+
+    <!-- Google Fonts for Luxury Editorial Wedding Stationery -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Canvas for subtle floating white rose petals & golden stardust -->
+    <canvas id="petal-canvas" aria-hidden="true"></canvas>
+
+    <!-- FLOATING MUSIC CONTROLLER -->
+    <aside class="music-floating-bar" id="musicBar" aria-label="Audio controls">
+        <button class="music-toggle-btn" id="musicToggleBtn" title="Play / Pause Wedding Hymn" aria-label="Toggle Wedding Music">
+            <div class="music-visualizer" id="visualizer">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+                <span class="bar bar-4"></span>
+            </div>
+            <span class="music-label" id="musicLabel">Wedding Hymn</span>
+        </button>
+    </aside>
+
+    <!-- ==============================================
+         HERO ENVELOPE / OPENING EXPERIENCE
+         ============================================== -->
+    <div class="envelope-overlay" id="envelopeOverlay">
+        <div class="envelope-container" id="envelopeContainer">
+            <div class="envelope-card">
+                <div class="envelope-flap" id="envelopeFlap"></div>
+                <div class="envelope-pocket"></div>
+                
+                <!-- Wax Seal & Open Button -->
+                <div class="seal-wrapper" id="openInvitationBtn" role="button" tabindex="0" aria-label="Open wedding invitation and play music">
+                    <div class="wax-seal-graphic">
+                        <img src="assets/wax_seal.jpg" alt="Holy Cross Gold Wax Seal" class="wax-seal-img">
+                        <div class="seal-glow"></div>
+                    </div>
+                    <div class="open-prompt">
+                        <span class="prompt-script">You are cordially invited</span>
+                        <h1 class="prompt-title">Open Sacred Invitation</h1>
+                        <span class="prompt-hint">
+                            <svg class="music-note-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                            </svg>
+                            Tap to open & play music
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==============================================
+         MAIN INVITATION SUITE
+         ============================================== -->
+    <main class="invitation-wrapper" id="invitationMain">
+        
+        <!-- Sacred Banner & Verse -->
+        <header class="sacred-header">
+            <div class="cross-icon-wrapper" aria-hidden="true">
+                <svg class="holy-cross-svg" viewBox="0 0 100 140" fill="none" stroke="currentColor">
+                    <line x1="50" y1="10" x2="50" y2="130" stroke-width="4" stroke-linecap="round" />
+                    <line x1="20" y1="45" x2="80" y2="45" stroke-width="4" stroke-linecap="round" />
+                    <circle cx="50" cy="45" r="14" stroke-width="1.8" />
+                    <path d="M45,45 L55,45 M50,40 L50,50" stroke-width="1" />
+                </svg>
+            </div>
+            
+            <p class="invocation-text">IN THE NAME OF THE FATHER, AND OF THE SON, AND OF THE HOLY SPIRIT</p>
+            
+            <blockquote class="bible-verse">
+                <span class="quote-mark">“</span>
+                Therefore what God has joined together, let no one separate.
+                <span class="quote-mark">”</span>
+                <cite class="verse-reference">— Mark 10:9</cite>
+            </blockquote>
+        </header>
+
+        <!-- Main Wedding Invitation Card -->
+        <article class="invitation-card">
+            <div class="card-border-frame">
+                <div class="card-inner-frame">
+                    
+                    <div class="invitation-preamble">
+                        <p class="script-lead">Together with their families</p>
+                        <p class="standard-lead-text">request the honour of your presence and prayers<br>as they unite in the Sacrament of Holy Matrimony</p>
+                    </div>
+
+                    <!-- Couple Portrait & Names -->
+                    <section class="couple-showcase-section">
+                        <div class="couple-photo-frame">
+                            <img src="assets/couple_portrait.jpg" alt="David and Sarah - Bride and Groom" class="couple-photo">
+                            <div class="photo-gold-border"></div>
+                        </div>
+
+                        <div class="couple-names-section">
+                            <h2 class="groom-name">David Alexander</h2>
+                            <div class="name-ampersand">
+                                <span class="amp-line"></span>
+                                <span class="amp-symbol">&</span>
+                                <span class="amp-line"></span>
+                            </div>
+                            <h2 class="bride-name">Sarah Elizabeth</h2>
+                        </div>
+                    </section>
+
+                    <!-- Date & Time -->
+                    <section class="ceremony-details">
+                        <div class="date-badge">
+                            <p class="day-name">TUESDAY</p>
+                            <div class="date-hero">
+                                <span class="date-month">NOVEMBER</span>
+                                <span class="date-number">24</span>
+                                <span class="date-year">2026</span>
+                            </div>
+                            <p class="time-stamp">AT 10:30 IN THE MORNING</p>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </article>
+
+        <!-- ==============================================
+             VENUE SHOWCASE & INFORMATION SECTION
+             ============================================== -->
+        <section class="venue-showcase-section" id="venue-info" aria-label="Ceremony Venue Details">
+            <div class="venue-card">
+                
+                <!-- Venue Photo -->
+                <div class="venue-image-wrapper">
+                    <img src="assets/cathedral_venue.jpg" alt="St. Michael's Cathedral Exterior" class="venue-photo">
+                    <div class="venue-photo-overlay">
+                        <span class="venue-badge">Ceremony & Blessings</span>
+                    </div>
+                </div>
+
+                <!-- Venue Info Body -->
+                <div class="venue-content">
+                    <div class="venue-header">
+                        <span class="venue-tagline">THE SACRED SANCTUARY</span>
+                        <h3 class="venue-name">St. Michael’s Cathedral</h3>
+                        <p class="venue-full-address">
+                            <svg class="pin-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            Cathedral Crescent, Grace Valley
+                        </p>
+                    </div>
+
+                    <!-- Ceremony Schedule Grid (Solemn Church Timeline) -->
+                    <div class="venue-schedule">
+                        <h4 class="schedule-title">Ceremony Order of Service</h4>
+                        <div class="timeline-grid">
+                            <div class="timeline-item">
+                                <span class="time-marker">10:00 AM</span>
+                                <span class="timeline-desc">Organ Prelude & Guest Seating</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="time-marker">10:30 AM</span>
+                                <span class="timeline-desc">Processional & Holy Nuptial Mass</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="time-marker">11:30 AM</span>
+                                <span class="timeline-desc">Exchange of Vows & Ring Blessing</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="time-marker">12:00 PM</span>
+                                <span class="timeline-desc">Recessional & Garden Blessings</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Venue Guidance (Parking & Attire) -->
+                    <div class="venue-guidelines">
+                        <div class="guide-item">
+                            <div class="guide-icon">🅿️</div>
+                            <div class="guide-text">
+                                <strong>Guest Parking:</strong>
+                                <span>Complimentary parking is available in the Cathedral East Lot & South Cloister.</span>
+                            </div>
+                        </div>
+                        <div class="guide-item">
+                            <div class="guide-icon">🕊️</div>
+                            <div class="guide-text">
+                                <strong>Sanctuary Decor:</strong>
+                                <span>Modest formal or church attire is respectfully requested for the Sanctuary service.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Venue Action Buttons -->
+                    <div class="action-buttons-row">
+                        <button class="btn-gold" id="addToCalendarBtn" title="Save this date to your calendar">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            Add to Calendar
+                        </button>
+
+                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-outline" title="Open Church directions in Google Maps">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Google Maps Directions
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section" aria-label="Wedding Countdown">
+            <h3 class="section-subtitle">COUNTING DOWN TO THE BLESSED DAY</h3>
+            <div class="countdown-timer" id="countdownTimer">
+                <div class="timer-box">
+                    <span class="timer-num" id="days">000</span>
+                    <span class="timer-label">DAYS</span>
+                </div>
+                <div class="timer-colon">:</div>
+                <div class="timer-box">
+                    <span class="timer-num" id="hours">00</span>
+                    <span class="timer-label">HOURS</span>
+                </div>
+                <div class="timer-colon">:</div>
+                <div class="timer-box">
+                    <span class="timer-num" id="minutes">00</span>
+                    <span class="timer-label">MINUTES</span>
+                </div>
+                <div class="timer-colon">:</div>
+                <div class="timer-box">
+                    <span class="timer-num" id="seconds">00</span>
+                    <span class="timer-label">SECONDS</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simple & Standard RSVP Section (Clean & Dignified, strictly no food questions) -->
+        <section class="rsvp-section" id="rsvp">
+            <div class="rsvp-card">
+                <h3 class="rsvp-title">R.S.V.P.</h3>
+                <p class="rsvp-sub">Kindly respond with your prayers & attendance by October 24, 2026</p>
+
+                <form id="rsvpForm" class="rsvp-form" onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="guestName">Your Full Name(s)</label>
+                        <input type="text" id="guestName" name="guestName" placeholder="e.g. Mr. & Mrs. Johnathan Smith" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="attendanceStatus">Will You Attend?</label>
+                            <select id="attendanceStatus" name="attendanceStatus" required>
+                                <option value="attending">Joyfully Accept</option>
+                                <option value="declining">Regretfully Decline</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group half">
+                            <label for="guestCount">Number of Attendees</label>
+                            <select id="guestCount" name="guestCount">
+                                <option value="1">1 Person</option>
+                                <option value="2" selected>2 Persons</option>
+                                <option value="3">3 Persons</option>
+                                <option value="4">4 Persons</option>
+                                <option value="5+">5+ Persons</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="blessingNote">A Prayer or Blessing for the Couple (Optional)</label>
+                        <textarea id="blessingNote" rows="3" placeholder="Share your heartfelt blessing or prayer..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-gold-submit" id="submitRsvpBtn">
+                        Send RSVP & Blessings
+                    </button>
+                    
+                    <div class="rsvp-feedback" id="rsvpFeedback" style="display: none;"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Sacred Footer -->
+        <footer class="sacred-footer">
+            <div class="footer-cross">✟</div>
+            <p class="footer-scripture">“And above all these put on love, which binds everything together in perfect harmony.”</p>
+            <p class="footer-ref">Colossians 3:14</p>
+            <p class="footer-copyright">David & Sarah • November 24, 2026</p>
+        </footer>
+
+    </main>
+
+    <!-- Calendar Download Modal / Notification -->
+    <div class="modal-backdrop" id="calendarModal" style="display: none;">
+        <div class="modal-box">
+            <h4 class="modal-title">Save to Calendar</h4>
+            <p class="modal-text">Choose your preferred calendar service for November 24, 2026:</p>
+            <div class="modal-buttons">
+                <a href="#" id="googleCalLink" target="_blank" class="modal-btn">Google Calendar</a>
+                <button id="appleIcsBtn" class="modal-btn">Apple / Outlook (.ics)</button>
+            </div>
+            <button class="modal-close-btn" id="closeCalendarModal">Close</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="audio.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
